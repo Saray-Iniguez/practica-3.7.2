@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambio() {
+            var colores = ['red', 'orange', 'yellow', 'green', 'lightblue', 'blue', 'purple'];
+            var parrafos = document.querySelectorAll('p');
+            parrafos.forEach(function(parrafo, index) {
+                parrafo.style.color = colores[index];
+            });
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="cambio()">Arc de Sant Martí</h1>
+    <p>roig,red,rojo</p>
+    <p>taronja,orange,naranja</p>
+    <p>groc.yellow,amarillo</p>
+    <p>verd,green,verde</p>
+    <p>blue clar,light blue,azul claro</p>
+    <p>blau,blue,azul</p>
+    <p>morat,purple,morado</p>
+</body>
+</html>
